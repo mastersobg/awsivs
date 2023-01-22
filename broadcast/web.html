@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Broadcast</title>
+  <script src="https://web-broadcast.live-video.net/1.2.0/amazon-ivs-web-broadcast.js"></script>
+
+  <style>
+    #error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h3 id="error"></h3>
+  </section>
+
+  <section>
+    <canvas id="preview"></canvas>
+  </section>
+
+  <section>
+    <label for="ingest-endpoint">Ingest Endpoint</label>
+    <input type="text" id="ingest-endpoint" value="" />
+  </section>
+
+  <section>
+    <label for="stream-key">Stream Key</label>
+    <input type="text" id="stream-key" value="" />
+  </section>
+
+  <section>
+    <button class="button" id="start" onclick="startBroadcast()">Start Broadcast</button>
+    <button class="button" id="stop" onclick="stopBroadcast()">Stop Broadcast</button>
+  </section>
+</body>
+
+  <script src="script.js"></script>
+</html>
